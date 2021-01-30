@@ -205,3 +205,108 @@
   height: 350px;
 }
 
+// team content 
+
+.team-container {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-card {
+  width: 270px;
+}
+
+.team-card__title {
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.team-card__subtitle {
+  color: #e84545;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.team-card__description {
+  color: #6c7279;
+  margin-top: 30px;
+  opacity: 0.9;
+  line-height: 21px;
+}
+
+// download cotent
+
+.download-container { 
+  width: 624px;
+  height: 139px;
+  margin: 110px 638px 213px 213px;
+  text-align: center;
+}
+
+.download-title {
+  margin: 15px auto;
+  color: #2d3033;
+  font-family: 'Raleway';
+  font-size: 27px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 21px;
+}
+
+.download-subtitle {
+  margin-bottom: 40px;
+  color: #2d3033;
+  font-family: 'Raleway';
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.download__button {
+  display: block;
+  width: 200px;
+  padding: 25px;
+  margin: 0 auto;
+  background-color: #e84545;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 5px;
+  text-transform: uppercase;
+  border: none;
+}
+
+// footer content 
+
+.footer {
+  display: flex;
+  background: url('../images/background-footer.svg') no-repeat;
+  background-size: cover;
+}
+
+.footer-title {
+  margin-top: 71px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-subtitle {
+  width: 146px;
+  height: 37px;
+  margin-bottom: 110px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
