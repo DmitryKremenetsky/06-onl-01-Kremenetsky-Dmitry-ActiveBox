@@ -5,38 +5,35 @@
   text-decoration: none;
 }
 
-.header { 
-  width: 100%;
-  height: 701px;  
-  background: url('../images/background.png') no-repeat;
-  background-size: cover;
-}
-
 .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+.header {
+  height: 750px;
+  background: url('../images/background.png') no-repeat;
+  background-size: cover;
+}
+
 .menu {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
   margin-bottom: 156px;
 }
 
 .menu-logo {
-  margin: 20px auto;
+  display: flex;
 }
 
 .navigation-bar__menu {
   display: flex;
-  flex-wrap: wrap;
   width: 505px;
   justify-content: space-between;
   margin: 25px 0;
-  padding-right: 108px;
 }
 
 .navigation-bar__menu_text {
@@ -45,6 +42,45 @@
   opacity: 70%;
   font-weight: 600;
   font-size: 15px;
+}
+
+// burger menu //
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  top: calc(50% - 14px);
+  right: 0;
+  width: 30px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.menu-btn__burger {
+  position: absolute;
+  top: 13px;
+  height: 2px;
+  width: 30px;
+  background-color: whitesmoke;
+}
+
+.menu-btn__burger:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  height: 2px;
+  width: 30px;
+  background-color: whitesmoke;
+}
+
+.menu-btn__burger:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  height: 2px;
+  width: 30px;
+  background-color: whitesmoke;
 }
 
 .navigation-bar__menu_item,
@@ -60,7 +96,6 @@
 
 
 .header-title {
-  height: 119px;
   margin-bottom: 41px;
   font-size: 65px;
   font-weight: 700;
@@ -71,7 +106,6 @@
 }
 
 .header-subtitle {
-  display: block;
   height: 55px;
   margin-bottom: 77px;
   font-size: 22px;
@@ -89,7 +123,6 @@
   margin: 0 auto;
   background-color: #e84545;
   color: #FFFFFF;
-  font-family: "Raleway - Semi Bold";
   font-size: 13px;
   font-weight: 400;
   line-height: 5px;
@@ -149,4 +182,26 @@
   line-height: 21px;
 }
 
+// works content //
+
+.work {
+  height: 701px;
+}
+
+.work-card__container {
+  display: flex;
+  width: 480px;
+  height: 350px;
+  flex-shrink: 1;
+}
+
+.work-card__container:last-child {
+  flex-shrink: 2;
+}
+
+.work-card__low {
+  display: flex;
+  width: 480px;
+  height: 350px;
+}
 
