@@ -231,37 +231,45 @@
 .team-card__description {
   color: #6c7279;
   margin-top: 30px;
+  margin-bottom: 30px;
   opacity: 0.9;
   line-height: 21px;
 }
 
+.team__social-icon {
+  line-height: 36px;
+  border: 1px solid #c6cacc;
+  color: #c6cacc;
+}
+
+.team__social-icons {
+  display: flex;
+  gap: 7px;
+}
+
+ul {
+  display: flex;
+}
+
 // download cotent
 
-.download-container { 
-  width: 624px;
-  height: 139px;
-  margin: 110px 638px 213px 213px;
+.download__title {
+  margin: 100px auto 0 auto;
+  color: #2d3033;
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: 300;
   text-align: center;
 }
 
-.download-title {
-  margin: 15px auto;
+.download__subtitle {
+  margin: 16px auto 40px;
   color: #2d3033;
-  font-family: 'Raleway';
-  font-size: 27px;
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 21px;
-}
-
-.download-subtitle {
-  margin-bottom: 40px;
-  color: #2d3033;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 13px;
   font-weight: 700;
   line-height: 21px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -270,12 +278,14 @@
   width: 200px;
   padding: 25px;
   margin: 0 auto;
+  margin-bottom: 100px;
   background-color: #e84545;
   color: #FFFFFF;
   font-size: 13px;
   font-weight: 400;
   line-height: 5px;
   text-transform: uppercase;
+  text-align: center;
   border: none;
 }
 
@@ -314,9 +324,16 @@
   text-align: center;
 }
 
+.social-icon {
+  padding: 10px;
+}
+
+.social-icon:first-child {
+  padding: 10px 15px;
+}
+
 .info__social-icons-container {
   display: flex;
-  justify-content: center;
 }
 
 .info__social-icons {
