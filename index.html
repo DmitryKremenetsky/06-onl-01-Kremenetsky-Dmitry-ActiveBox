@@ -4,15 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./styles/media.scss">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cardo" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
   <title>ActiveBox</title>
 </head>
 
@@ -214,15 +211,48 @@
     </div>
   </section>
   <section class="clients">
-    <div class="left-part">
-      <img src="./images/client.png" alt="client woman">
-    </div>
-    <div class="right-part">
-      <div>
-        <h4 class="right-part__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-          Donec sed odio dui. Aenean eu leo quam...”
-        </h4>
-        <p class="right-part__subtitle">Susan Sims, Interaction Designer at XYZ</p>
+    <div class="slider">
+
+      <div class="slider-item">
+        <div class="left-part">
+          <img src="./images/client.png" alt="client woman">
+        </div>
+        <div class="right-part">
+          <div>
+            <h4 class="right-part__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+              Donec sed odio dui. Aenean eu leo quam...”
+            </h4>
+            <p class="right-part__subtitle">Susan Sims, Interaction Designer at XYZ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item">
+        <div class="left-part">
+          <img src="./images/client.png" alt="client woman">
+        </div>
+        <div class="right-part">
+          <div>
+            <h4 class="right-part__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+              Donec sed odio dui. Aenean eu leo quam...”
+            </h4>
+            <p class="right-part__subtitle">Susan Sims, Interaction Designer at XYZ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item">
+        <div class="left-part">
+          <img src="./images/client.png" alt="client woman">
+        </div>
+        <div class="right-part">
+          <div>
+            <h4 class="right-part__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+              Donec sed odio dui. Aenean eu leo quam...”
+            </h4>
+            <p class="right-part__subtitle">Susan Sims, Interaction Designer at XYZ</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -276,9 +306,21 @@
       </div>
     </section>
   </footer>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    const dotsParentContainer = document.querySelector('.right-part');
+
+    $(document).ready(function(){
+      $('.slider').slick({
+        arrows: false,
+        dots: true,
+        appendDots: dotsParentContainer
+      });
+    });
+  </script>
 </body>
 
 </html>
