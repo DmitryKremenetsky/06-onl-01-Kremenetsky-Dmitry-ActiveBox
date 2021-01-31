@@ -251,6 +251,48 @@ ul {
   display: flex;
 }
 
+// client content 
+
+.clients {
+  display: flex;
+  width: 100%;
+}
+
+.left-part {
+  width: 50%;
+}
+
+.right-part {
+  width: 50%;
+  background: url('../images/clients-background.png') no-repeat;
+  background-size: cover;
+}
+
+.right-part__title {
+  width: 500px;
+  height: 163px;
+  margin: 114px 87px 30px;
+  color: #ffffff;
+  font-family: 'Cardo';
+  font-size: 36px;
+  font-style: italic;
+  line-height: 42px;
+  text-align: left;
+}
+
+.right-part__subtitle {
+width: 285px;
+height: 10px;
+margin-left: 87px;
+color: #ffffff;
+font-family: 'Raleway';
+font-size: 13px;
+font-weight: 700;
+line-height: 21px;
+text-align: left;
+text-transform: uppercase;
+}
+
 // download cotent
 
 .download__title {
