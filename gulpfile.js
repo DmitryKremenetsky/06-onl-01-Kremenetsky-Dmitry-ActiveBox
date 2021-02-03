@@ -5,8 +5,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const includeFile = require('gulp-file-include');
 const browsersync = require('browser-sync').create();
 
-const HTML_PATH = ['.//*.html', '!dist/index.html'];
-const SCSS_PATH = './styles//*.scss';
+const HTML_PATH = ['./*.html', '!dist/index.html'];
+const SCSS_PATH = './styles/*.scss';
 const IMAGES_PATH = './images/**/*.{gif,jpg,png,svg}';
 
 function htmlTask() {
