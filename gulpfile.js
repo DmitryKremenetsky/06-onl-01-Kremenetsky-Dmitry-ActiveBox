@@ -16,7 +16,7 @@ function htmlTask() {
 }
 
 function scssTask() {
-  return src('./styles/index.scss')
+  return src('./styles/style.scss')
     .pipe(sourcemaps.init())
     .pipe(concat('styles.css'))
     .pipe(sass())

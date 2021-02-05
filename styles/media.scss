@@ -1,8 +1,14 @@
-
-
 @media (max-width: 680px) {
   .download__button {
     width: 100%;
+  }
+
+  .team-container {
+    justify-content: center;
+  }
+
+  .client-subtitle {
+    margin: 0 auto;
   }
 }
 
@@ -10,11 +16,51 @@
   .info-container {
     margin: 15px auto;
   }
+
+  .team-container {
+    justify-content: center;
+  }
+
+  .download__button {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 470px) {
   .info__item {
     margin: 15px 0;
+  }
+
+  .download__button {
+    width: 100%;
+  }
+
+  .header-title {
+  font-size: 35px;
+  }
+
+  .header-subtitle { 
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .info__item {
+    margin: 15px 0;
+  }
+
+  .download__button {
+    width: 100%;
+  }
+
+  .header-title {
+  font-size: 35px;
+  }
+
+  .header-subtitle { 
+    font-size: 15px;
   }
 }
 
