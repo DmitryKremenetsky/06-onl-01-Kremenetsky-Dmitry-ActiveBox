@@ -1,0 +1,26 @@
+
+
+@media (max-width: 680px) {
+  .download__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .info-container {
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .info__item {
+    margin: 15px 0;
+  }
+}
+
+
+@media (max-width: 1138px) {
+  .client-photo {
+    display: none;
+  }
+}

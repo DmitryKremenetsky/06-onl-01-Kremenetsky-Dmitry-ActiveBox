@@ -7,11 +7,9 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cardo" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./styles.css">
-  <link rel="stylesheet" type="text/css" href="./styles/media.css">
   <title>ActiveBox</title>
 </head>
 
@@ -22,12 +20,12 @@
         <div class="menu-logo">
           <img src="./images/ActiveBox-logo.svg" alt="ActiveBox-logo">
         </div>
-        <ul class="navigation-bar__menu">
-          <li class="navigation-bar__menu_item"><a href="#" class="navigation-bar__menu_text">Feautures</a></li>
-          <li class="navigation-bar__menu_item"><a href="#" class="navigation-bar__menu_text">About</a></li>
-          <li class="navigation-bar__menu_item"><a href="#" class="navigation-bar__menu_text">Pricing</a></li>
-          <li class="navigation-bar__menu_item"><a href="#" class="navigation-bar__menu_text">Reviews</a></li>
-          <li class="navigation-bar__menu_item"><a href="#" class="navigation-bar__menu_text">Contact</a></li>
+        <ul class="navigation__menu">
+          <li class="navigation__menu_item"><a href="#" class="navigation__menu_text">Feautures</a></li>
+          <li class="navigation__menu_item"><a href="#" class="navigation__menu_text">About</a></li>
+          <li class="navigation__menu_item"><a href="#" class="navigation__menu_text">Pricing</a></li>
+          <li class="navigation__menu_item"><a href="#" class="navigation__menu_text">Reviews</a></li>
+          <li class="navigation__menu_item"><a href="#" class="navigation__menu_text">Contact</a></li>
         </ul>
         <div class="menu-btn">
           <span class="menu-btn__burger"></span>
@@ -292,43 +290,37 @@
     </div>
 
     <div class="slider">
-
       <div class="slider-item">
         <div class="client-description">
-          <div>
-            <h4 class="right-part__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-              Donec sed odio dui. Aenean eu leo quam...”
-            </h4>
-            <p class="right-part__subtitle">Susan Sims, Interaction Designer at XYZ</p>
-          </div>
+          <h4 class="client-title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+            Donec sed odio dui. Aenean eu leo quam...”
+          </h4>
+          <p class="client-subtitle">Susan Sims, Interaction Designer at XYZ</p>
         </div>
       </div>
       <div class="slider-item">
         <div class="client-description">
-          <div>
-            <h4 class="right-part__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-              Donec sed odio dui. Aenean eu leo quam...”
-            </h4>
-            <p class="right-part__subtitle">Susan Sims, Interaction Designer at XYZ</p>
-          </div>
+          <h2 class="client-title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+            Donec sed odio dui. Aenean eu leo quam...”
+          </h2>
+          <p class="client-subtitle">Susan Sims, Interaction Designer at XYZ</p>
         </div>
       </div>
       <div class="slider-item">
         <div class="client-description">
-          <div>
-            <h4 class="right-part__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-              Donec sed odio dui. Aenean eu leo quam...”
-            </h4>
-            <p class="right-part__subtitle">Susan Sims, Interaction Designer at XYZ</p>
-          </div>
+          <h4 class="client-title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+            Donec sed odio dui. Aenean eu leo quam...”
+          </h4>
+          <p class="client-subtitle">Susan Sims, Interaction Designer at XYZ</p>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
   <section class="download">
-    <h2 class="download__title">Are You Ready to Start? Download Now For Free!</h2>
-    <h3 class="download__subtitle">Fusce dapibus, tellus ac cursus commodo</h3>
+    <p class="download__title">Are You Ready to Start? Download Now For Free!</p>
+    <p class="download__subtitle">Fusce dapibus, tellus ac cursus commodo</p>
     <a href="#" class="button download__button">Download Here</a>
   </section>
 
@@ -383,7 +375,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script type="text/javascript">
-    const dotsParentContainer = document.querySelector('.client-description');
+    const dotsParentContainer = document.querySelector('.slider');
 
     $(document).ready(function () {
       $('.slider').slick({
