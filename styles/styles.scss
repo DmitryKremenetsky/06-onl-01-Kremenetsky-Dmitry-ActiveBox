@@ -259,6 +259,7 @@
 
 .team-card {
   width: 270px;
+  margin: 10px auto;
 }
 
 .team-card__title {
@@ -419,6 +420,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 71px auto 73px auto;
+}
+
+.info__item {
+  margin: 0 auto;
 }
 
 .info__title {
