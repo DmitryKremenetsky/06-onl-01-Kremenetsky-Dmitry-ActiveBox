@@ -376,7 +376,7 @@
   border-radius: 50%;
 }
 
-.slider .slick-dots li.slick-active button:hover {
+.slider .slick-dots li.slick-active button {
   background-color: transparent;
   border: 1px solid #ffffff;
 }
@@ -444,6 +444,7 @@
 }
 
 .info__text {
+  width: 330px;
   margin-top: 22px;
   opacity: 0.5;
   color: #ffffff;
